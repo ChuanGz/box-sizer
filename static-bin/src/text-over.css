@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  max-width: 200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+p {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Default Text */
+.default-text {
+  background-color: #f9f9f9;
+}
+
+/* word-break: break-all; */
+.break-all {
+  word-break: break-all;
+  background-color: #e0f7fa;
+}
+
+/* word-break: break-word; */
+.break-word {
+  word-break: break-word; /* Note: `break-word` is deprecated in favor of `overflow-wrap` */
+  background-color: #ffe0b2;
+}
+
+/* overflow-wrap: break-word; */
+.overflow-wrap {
+  overflow-wrap: break-word;
+  overflow: hidden;
+  background-color: #c8e6c9;
+}
+
+/* Preventing Overlap */
+.hidden-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: #ffcdd2;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Overlap and Word Break Demo</title>
+  <link rel="stylesheet" href="text-over.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Default Behavior</h2>
+    <p class="default-text">
+      Thisisaverylongwordthatwilllikelyoverflowthecontainerandcauseoverlappingissues__________________________________________.
+    </p>
+
+    <h2>Using `word-break: break-all;`</h2>
+    <p class="break-all">
+      Thisisaverylongwordthatwilllikelyoverflowthecontainerandcauseoverlappingissues__________________________________________.
+    </p>
+
+    <h2>Using `word-break: break-word;`</h2>
+    <p class="break-word">
+      Thisisaverylongwordthatwilllikelyoverflowthecontainerandcauseoverlappingissues__________________________________________.
+    </p>
+
+    <h2>Using `overflow-wrap: break-word;`</h2>
+    <p class="overflow-wrap">
+      Thisisaverylongwordthatwilllikelyoverflowthecontainerandcauseoverlappingissues__________________________________________.
+    </p>
+
+    <h2>Preventing Overlap with `overflow: hidden;`</h2>
+    <p class="hidden-overflow">
+      Thisisaverylongwordthatwilllikelyoverflowthecontainerandcauseoverlappingissues__________________________________________.
+    </p>
+  </div>
+</body>
+</html>

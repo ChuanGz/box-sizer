@@ -7,27 +7,25 @@
   padding: 12px;
   background-color: lightgreen;
   overflow: hidden;
-  .container-left {
+
+  .container-left,
+  .container-right {
     display: flex;
     flex: 0 0 auto;
-    .ellipsis {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
   }
+
+  .container-left,
+  .container-right .ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .container-right {
     margin-right: 4px;
     margin-left: auto;
-    display: flex;
-    flex: 0 0 auto;
     gap: 0.5rem;
     border: 2px solid black;
-    .ellipsis {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
   }
 }
 .firstbox {
@@ -42,20 +40,21 @@
 .forthbox {
   background-color: purple;
 }
-
 @container (max-width: 380px) {
   .thirdbox {
     display: none;
   }
-}
-@container (max-width: 300px) {
-  .secondbox {
-    display: none;
-  }
-}
-@container (max-width: 50px) {
-  .firstbox {
-    display: none;
+
+  @container (max-width: 300px) {
+    .secondbox {
+      display: none;
+    }
+
+    @container (max-width: 50px) {
+      .firstbox {
+        display: none;
+      }
+    }
   }
 }
 
